@@ -8,5 +8,5 @@ use App\Http\Middleware\JwtMiddleware;
 Route::post('login', [AuthController::class, 'login']);
 
 Route::middleware([JwtMiddleware::class])->group(function () {
-    Route::get('user/me', [AuthController::class, 'getUser']);
+    Route::get('users/me', [AuthController::class, 'getUser']);
 });
