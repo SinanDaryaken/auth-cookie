@@ -25,6 +25,10 @@ return [
         'https://frontend.home:8000',
         'https://auth.cleture.com',
         'http://auth.cleture.com',
+        'http://app-local.cleture.com:3000/',
+        'https://app-local.cleture.com:3000/',
+        'http://app-local.cleture.com',
+        'https://app-local.cleture.com'
     ],
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
