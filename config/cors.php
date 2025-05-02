@@ -20,6 +20,8 @@ return [
         'https://cleture-test-auth.vercel.app',
         'http://cleture-test-auth.vercel.app',
         'http://frontend.home:8000',
+        'http://localhost:3500',
+        'https://localhost:3500',
         'https://frontend.home:8000',
         'https://auth.cleture.com',
         'http://auth.cleture.com',
