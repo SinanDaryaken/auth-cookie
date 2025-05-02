@@ -22,8 +22,8 @@ class AuthController extends Controller
 
             return response()
                 ->json(['message' => 'Login successful'])
-                ->cookie('dummyCookie', '1234', 60, '/', 'cleture.com', true, true, false, 'none')
-                ->cookie('accessToken', $token, 60, '/', 'cleture.com', true, true, false, 'none');
+                ->cookie('dummyCookie', '1234', 24 * 60 * 60, '/', '.cleture.com', true, true, false, 'none')
+                ->cookie('accessToken', $token, 24 * 60 * 60, '/', '.cleture.com', true, true, false, 'none');
 
         } catch (JWTException $e) {
             Log::debug('JWT Login - Error: ' . $e->getMessage());
